@@ -4,6 +4,14 @@
   (:use (lobos [migration :only [defmigration]] core schema
                config helpers)))
 
+(comment
+  To run
+
+  (use '(lobos core connectivity schema))
+  (lobos.core/migrate)
+
+  )
+
 (defmigration add-users-table
   (up [] (create
           (tbl :users
