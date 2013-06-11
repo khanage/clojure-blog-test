@@ -1,4 +1,4 @@
 (ns compojure-blog-test.views)
 
-(defn render-blog [id]
-  (str "This is blog entry " id))
+(defn render-post [post]
+  (str "This is blog entry " (:id post)))
