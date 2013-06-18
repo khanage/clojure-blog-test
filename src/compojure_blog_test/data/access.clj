@@ -30,7 +30,7 @@
       (exec)))
 
 (defn post-by-id [id]
-  (select posts
+    (select posts
           (with users)
           (with comments)
           (where { :id id })))
